@@ -2,7 +2,7 @@
 
 *
   -webkit-font-smoothing: antialiased
-  transition: ease-in-out 500ms all
+  transition: ease-in-out 250ms all
 
 // Debuggin trick
 .list *
@@ -13,12 +13,22 @@ body
   background: $neutro
   font-family: $lato
 
+h2, h3, h4
+  font-family: $pacifico
+  color: $background
+
+h2
+  font-size: 1.8em
+
+.special-accent
+  color: $vino
+
 // Navigation
 .nav-bar-wrapper
   .menu
     background-color: rgba($background, $alpha)
     overflow: auto
-    position: fixed
+    position: absolute
     top: 0
     left: 0
     bottom: 7px
@@ -100,3 +110,38 @@ body
       &:active
         -webkit-transform: translate(5px, 5px)
         transform: translate(5px, 5px)
+
+.about
+  height: 400px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  @media(max-width: 780px)
+    height: 800px
+  .about-us
+    width: 50%
+    display: flex
+    justify-content: center
+    .about-us-txt
+      margin: auto
+      padding: 0 30%
+      text-align: center
+      @media(max-width: 780px)
+        padding: 0 15%
+      h2
+        margin-bottom: 40px
+        @media(max-width: 780px)
+          margin-bottom: 20px
+    @media(max-width: 780px)
+      width: 100%
+      height: 400px
+  .about-us-img
+    width: 50%
+    background: url('../img/taco.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    @media(max-width: 780px)
+      width: 100%
+      height: 400px
