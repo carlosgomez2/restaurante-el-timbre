@@ -23,6 +23,16 @@ h2
 .special-accent
   color: $vino
 
+.inverted
+  color: $neutro !important
+  text-align: center
+
+.menu-paragraph
+  color: darken($neutro, 3.5)
+
+.menu-bold
+  color: white
+
 // Navigation
 .nav-bar-wrapper
   .menu
@@ -113,6 +123,7 @@ h2
 
 .about
   height: 400px
+  // Flex properties
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -121,6 +132,7 @@ h2
     height: 800px
   .about-us
     width: 50%
+    // Flex properties
     display: flex
     justify-content: center
     .about-us-txt
@@ -130,7 +142,7 @@ h2
       @media(max-width: 780px)
         padding: 0 15%
       h2
-        margin-bottom: 40px
+        margin-bottom: 25px
         @media(max-width: 780px)
           margin-bottom: 20px
     @media(max-width: 780px)
@@ -145,3 +157,90 @@ h2
     @media(max-width: 780px)
       width: 100%
       height: 400px
+
+.specialty
+  display: block
+  .specialty-title
+    width: 100%
+    background-color: $background
+    height: 170px
+    // Flex properties
+    display: flex
+    flex-flow: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    @media(min-width: 320px)
+      height: 250px
+    .specialty-title-description
+      max-width: 75%
+      text-align: center
+      margin-top: 0
+      @media(min-width: 880px)
+        max-width: 400px
+  .specialty-wrapper
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    align-content: flex-start
+    .specialty-pic
+      width: 20%
+      object-fit: fill
+      flex-grow: 1
+      @media(max-width: 600px)
+        width: 50%
+
+.menu
+  .menu-title
+    width: 100%
+    background-color: $background
+    height: 130px
+    // Flex properties
+    display: flex
+    flex-flow: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+  .menu-background
+    width: 100%
+    height: 800px
+    background-image: url('../img/menu-background_02.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    object-fit: contain
+    @media(max-width: 768px)
+      height: 743px
+    @media(max-width: 600px)
+      height: 850px
+    @media(max-width: 530px)
+      height: 1240px
+    @media(max-width: 480px)
+      height: 1280px
+    @media(max-width: 414px)
+      height: 1200px
+    @media(max-width: 375px)
+      height: 1250px
+    @media(max-width: 360px)
+      height: 1285px
+    @media(max-width: 320px)
+      height: 1370px
+    .menu-wrapper
+      margin: auto
+      padding: 10% 0
+      max-width: 700px
+      // Flex properties
+      display: flex
+      @media(max-width: 1024px)
+        padding: 8% 0
+      @media(max-width: 480px)
+        flex-wrap: wrap
+        flex-direction: column
+        padding: auto
+      .menu-left, .menu-right
+        width: 50%
+        @media(max-width: 480px)
+          width: 100%
+        .menu-paragraph
+          padding: 0 10px
