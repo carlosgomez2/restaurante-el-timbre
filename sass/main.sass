@@ -20,12 +20,24 @@ h2, h3, h4
 h2
   font-size: 1.8em
 
+a
+  color: $accent
+  text-decoration: none
+
+ul
+  list-style-type: none
+  line-height: 1.6em
+
 .special-accent
   color: $vino
 
 .inverted
   color: $neutro !important
   text-align: center
+
+.inverted-contact
+  color: $neutro !important
+  text-align: left
 
 .menu-paragraph
   color: darken($neutro, 3.5)
@@ -228,7 +240,7 @@ h2
       height: 1370px
     .menu-wrapper
       margin: auto
-      padding: 10% 0
+      padding: 6% 0
       max-width: 700px
       // Flex properties
       display: flex
@@ -244,3 +256,53 @@ h2
           width: 100%
         .menu-paragraph
           padding: 0 10px
+
+.contact
+  background-color: pink
+  #map
+    width: 100%
+    height: 500px
+  footer
+    display: flex
+    flex-flow: wrap
+    flex-direction: row
+    @media (max-width: 900px)
+      flex-direction: column
+    .contact-footer, .logo-footer, .social-footer
+      width: 33.33%
+      height: 160px
+      color: $neutro
+      @media (max-width: 900px)
+        width: 100%
+    .contact-footer
+      background-color: $background
+      order: 1
+      @media (max-width: 900px)
+        order: 3
+      .inverted-contact
+        padding-left: 40px
+        font-size: 1.2em
+    .logo-footer
+      background-color: $background
+      order: 2
+      // Flex properties
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      @media (max-width: 900px)
+        order: 1
+      .logo-footer-img
+        width: 40%
+
+    .social-footer
+      order: 3
+      background-color: $background
+      // Flex properties
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      @media (max-width: 900px)
+        order: 2
+      .social-link
