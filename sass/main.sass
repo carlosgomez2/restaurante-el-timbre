@@ -46,19 +46,25 @@ ul
   color: white
 
 // Navigation
-.nav-bar-wrapper
+#nav-bar-wrapper
+
+  @media (max-width: 768px)
   .menu
     background-color: rgba($background, $alpha)
     overflow: auto
     position: absolute
     top: 0
     left: 0
-    bottom: 7px
     width: 135px
+    height: 930px
     // Flex properties
     display: flex
     flex-direction: column
     justify-content: center
+    @media (max-width: 768px)
+      visibility: hidden
+      transition: all 0.5s ease-in-out
+      transform: translateX(-100%)
 
     .menu-link
       color: white
@@ -258,7 +264,7 @@ ul
           padding: 0 10px
 
 .contact
-  background-color: pink
+  background-color: $neutro
   #map
     width: 100%
     height: 500px
@@ -278,10 +284,13 @@ ul
       background-color: $background
       order: 1
       @media (max-width: 900px)
-        order: 3
+        order: 1
       .inverted-contact
-        padding-left: 40px
+        text-align: center
         font-size: 1.2em
+      ul
+        text-align: center
+        padding-left: 0
     .logo-footer
       background-color: $background
       order: 2
@@ -291,9 +300,9 @@ ul
       justify-content: space-around
       align-items: center
       @media (max-width: 900px)
-        order: 1
+        order: 3
       .logo-footer-img
-        width: 40%
+        max-height: 160px
 
     .social-footer
       order: 3
@@ -306,3 +315,5 @@ ul
       @media (max-width: 900px)
         order: 2
       .social-link
+        .social-link-img
+          max-width: 55px
