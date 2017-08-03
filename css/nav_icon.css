@@ -1,0 +1,36 @@
+/*
+Error: Invalid CSS after "  left: 50%": expected "{", was ""
+        on line 64 of /home/rasalghul/Dropbox/PROYECTOS/restaurante-el-timbre/web/sass/nav_icon.scss
+
+59: 
+60: #nav-icon3.open span:nth-child(4)
+61:   top: 18px
+62:   width: 0%
+63:   left: 50%
+
+Backtrace:
+/home/rasalghul/Dropbox/PROYECTOS/restaurante-el-timbre/web/sass/nav_icon.scss:64
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/share/koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/usr/share/koala/bin/sass:18:in `load'
+/usr/share/koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  left: 50%\": expected \"{\", was \"\"\A         on line 64 of /home/rasalghul/Dropbox/PROYECTOS/restaurante-el-timbre/web/sass/nav_icon.scss\A \A 59: \A 60: #nav-icon3.open span:nth-child(4)\A 61:   top: 18px\A 62:   width: 0%\A 63:   left: 50%"; }
